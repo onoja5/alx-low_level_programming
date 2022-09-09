@@ -14,7 +14,7 @@ int main(void)
 		j = i / 10;
 		k = i % 10;
 		putchar(j + '0');
-		puchar(k + '0');
+		putchar(k + '0');
 
 		if (i < 99)
 		{

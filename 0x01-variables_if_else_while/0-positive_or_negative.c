@@ -4,6 +4,7 @@
 
 /**
  * main - > This assign a random number to the variable n
+ *
  * each time it is executed based on a condition
  * Return : always 0
  */

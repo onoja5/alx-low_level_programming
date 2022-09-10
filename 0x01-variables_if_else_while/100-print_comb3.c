@@ -1,28 +1,34 @@
 #include <stdio.h>
 
 /**
- * main - This prints all possible different digits
+ * main - This prints numbers from 00 to 99
  *
  * Return: Always 0
  */
 int main(void)
 {
-	int i, j, k;
+	int i, e;
 
-	for (i = 0; i < 100; i++)
+	i = 48;
+	i = 48;
+
+	while (e < 58)
 	{
-		j = i / 10;
-		k = i % 10;
-		putchar(j + '0');
-		putchar(k + '0');
-
-		if (i < 99)
+		i = 48;
+		while (i < 58)
 		{
-			putchar(44);
-			putchar(32);
+			putchar(e);
+			putchar(i);
+			if (i == 57 && e == 57)
+			{
+				break
+			}
+			putchar(',');
+			putchar(' ');
+			i++;
 		}
+		e++;
 	}
 	putchar('\n');
-
 	return (0);
 }

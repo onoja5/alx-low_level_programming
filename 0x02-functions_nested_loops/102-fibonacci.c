@@ -20,11 +20,13 @@ int main(void)
 		else
 		{
 			printf("%lu, ", j);
-		}}
+		}
+
 		k = j;
 		j += i;
 		i = k;
 		count++;
 	}
+
 	return (0);
 }

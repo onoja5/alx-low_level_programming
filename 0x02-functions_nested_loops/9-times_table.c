@@ -39,6 +39,6 @@ void time_table(void)
 			y++;
 		}
 		_putchar('\n');
-		x++
+		x++;
 	}
 }

@@ -1,4 +1,4 @@
-#include <stdio.h
+#include <stdio.h>
 
 /**
  * main - prints message Buzz for  each numbers of 3 and 5.

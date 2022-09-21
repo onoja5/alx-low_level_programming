@@ -2,29 +2,25 @@
 #include <string.h>
 /**
  * cap_string - function that capitalizes all words of a string
- * @str: string
- * Return: `str
+ * @X: string
+ * Return: X
  */
-char *cap_string(char *str)
+char *cap_string(char *X)
 {
-	int count = 0, i;
-	int sep_words[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+	char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	int len = 13;
+	int a = 0, i;
 
-	if (*(s + count) >= 97 && *(s + count) <= 122)
-		*(s + count) = *(s + count) - 32;
-	count++;
-	while (*(s + count) != '\0')
+	while (x[a])
 	{
-		for (i = 0; i < 13; i++)
+		i = 0;
+		while (i < len)
 		{
-			if (*(s + count) == sep_words[i])
-			{
-				if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
-					*(s + (count + 1)) = *(s + (count + 1)) - 32;
-				break;
-			}
-		}
-		count++;
+			if ((a == 0 || X[a - 1] == spc[i] && (X[a] >= 97 && X[a] <= 122))
+					S[a] = s[a] - 32;
+	i++;
 	}
-	return (s);
-}
+	a++;
+	}
+	return (X);
+	}

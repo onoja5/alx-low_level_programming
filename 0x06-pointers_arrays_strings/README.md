@@ -1,6 +1,4 @@
-
 More pointers, arrays and strings in C Programming Language:
-
 This project was done during Full Stack Software Engineering at ALX Africa. It aims to learn the following:
 
 -Pointers and how to use them

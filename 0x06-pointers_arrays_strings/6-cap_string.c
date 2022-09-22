@@ -2,25 +2,35 @@
 #include <string.h>
 /**
  * cap_string - function that capitalizes all words of a string
- * @X: string
- * Return: X
+ * @str: The string to be capitalized
+ *
+ * Return: A pointer to the changed string
  */
-char *cap_string(char *X)
+char *cap_string(char *str)
 {
-	char spc[] = {32, 9, '\n', '', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
-	int len = 13;
-	int a = 0, i;
+	int index = 0;
 
-	while (X[a])
+	while (str[index])
 	{
-		i = 0;
-		while (i < len)
-		{
-			if ((a == 0 || X[a - 1] == spc[i] && (X[a] >= 97 && X[a] <= 122))
-					X[a] = X[a] - 32;
-	i++;
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+				str[index - 1] == '\t' ||
+				str[index - 1] == '\n' ||
+				str[index - 1] == ',' ||
+				str[index - 1] == ';' ||
+				str[index - 1] == '.' ||
+				str[index - 1] == '!' ||
+				str[index - 1] == '?' ||
+				str[index - 1] == '"' ||
+				str[index - 1] == '(' ||
+				str[index - 1] == ')' ||
+				str[index - 1] == '{' ||
+				str[index - 1] == '}' ||
+				index == 0)
+			str[index] -= 32;
+		index++
 	}
-	a++;
-	}
-	return (X);
-	}
+	return (str);
+}
